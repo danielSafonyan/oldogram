@@ -1,3 +1,100 @@
 body {
     margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+main {
+    width: 375px;
+    border: 5px solid black;
+    border-radius: 25px;
+}
+
+section {
+    overflow: scroll;
+    max-height: 550px;
+}
+
+.spacer {
+    padding: 10px;
+}
+
+header {
+    border-bottom: 1px solid lightgrey;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo {
+    max-width: 130px;
+}
+
+.user-avatar {
+    max-width: 34px;
+    border-radius: 100%;
+}
+
+.poster-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.text-name {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.text-location {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.img-container > img {
+    max-width: 100%;
+}
+
+.action-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.action-container > img {
+    max-width: 25px;
+    cursor: pointer;
+}
+
+.action-container > img:hover {
+    opacity: 0.5;
+}
+
+.likes {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.caption {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.caption > span {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
 }
