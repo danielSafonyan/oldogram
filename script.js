@@ -1,9 +1,8 @@
 import Posts from './data.js'
 
-function renderPost(postObject) {
-    const postId = 1
+function renderPost(postObject, id) {
     return (
-        `<div class="post" id="${postId}">
+        `<div class="post" id="${id}">
 
             <div class="spacer">
                 <div class="poster-info">
@@ -37,7 +36,7 @@ function renderPost(postObject) {
                 </div>
             </div>
 
-            <div class="divider" />
+            <div class="divider"></div>
 
         </div>
         `
@@ -48,10 +47,8 @@ const sectionElem = document.querySelector("section");
 
 function renderData(dataArray) {
     let dataHTML = ""
-    dataArray.forEach(el => dataHTML += renderPost(el))
+    dataArray.forEach((el, id) => dataHTML += renderPost(el, id))
     sectionElem.innerHTML = dataHTML;
-    console.log("dada", dataHTML);
-
 }
 
 document.onload = renderData(Posts);
