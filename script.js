@@ -78,5 +78,3 @@ function listenLike(event, path) {
 }
 
 renderData(postsLiked);
-
-
