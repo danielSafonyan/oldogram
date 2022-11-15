@@ -78,8 +78,13 @@ header {
     gap: 10px;
 }
 
-.action-container > img {
-    max-width: 25px;
+.action-container > div {
+    width: 25px;
+    cursor: pointer;
+}
+
+.action-container > div > img {
+    width: 100%;
     cursor: pointer;
 }
 
